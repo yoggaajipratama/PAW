@@ -2,7 +2,7 @@ sudo: requared
 dist: trusty
 language: php
 
-php
+php:
   -7.1
   
 #branche yg digunakan
