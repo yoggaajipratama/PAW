@@ -1,9 +1,9 @@
 sudo: requared
-dist: trusty
+dist: canocical
 language: php
 
 php:
-  -7.1
+  - 7.1
   
 #branche yg digunakan
 branches:
