@@ -10,12 +10,11 @@ branches:
     - master #-> DevServer
 
 # install Environment di OS
-before_install
+before_script:
   - curl -LO https://storage.googleapis.com/kubernet-release/release/$(curl -s https://storage.googleapis.com/kubernet-release/stable.txt) /bin/linux/amd64/kubectl
   - chmod +x ./kubectl
   - sudo mv ./kubectl /usr/localbin/kubenctl
 # Precompile
-before_script:
 
 # Main Exception (Build)
 script:
