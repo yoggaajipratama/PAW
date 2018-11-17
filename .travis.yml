@@ -1,7 +1,5 @@
-sudo: requared
-dist: canocical
+sudo: required
 language: php
-
 php:
   - 7.1
   
@@ -11,13 +9,13 @@ branches:
     - master #-> QA/Staging server
     - master #-> DevServer
 
-# install Evironment di OS
+# install Environment di OS
 before_install
-  - curl -LO https://storage.googleapis.com/kubernet-release/release/$(curl -s https://storage.googleapis.com/kubernet-release/stable.txt)/bin/linux/amd64/kubectl
+  - curl -LO https://storage.googleapis.com/kubernet-release/release/$(curl -s https://storage.googleapis.com/kubernet-release/stable.txt) /bin/linux/amd64/kubectl
   - chmod +x ./kubectl
   - sudo mv ./kubectl /usr/localbin/kubenctl
 # Precompile
-befores_cript:
+before_script:
 
 # Main Exception (Build)
 script:
