@@ -8,7 +8,6 @@ php:
 branches:
   only:
     - master #-> QA/Staging server
-    - master #-> DevServer
 
 # install Environment di OS
 # test
@@ -21,4 +20,4 @@ before_script:
 script:
   - ./vendor/bin/phpunit
 
-  after_success:
+after_success:
