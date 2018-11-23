@@ -11,6 +11,7 @@ branches:
     - master #-> DevServer
 
 # install Environment di OS
+# test
 before_script:
   - cp .env.travis .env
   - composer install --no-interaction
