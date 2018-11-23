@@ -14,7 +14,7 @@ branches:
 before_script:
   - cp .env.travis .env
   - composer install --no-interaction
-  - php artisan key:genarate
+  - php artisan key:generate
 
 # Main Exception (Build)
 script:
