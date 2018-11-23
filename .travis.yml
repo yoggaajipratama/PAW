@@ -12,9 +12,6 @@ branches:
 
 # install Environment di OS
 before_script:
-  # - curl -LO https://storage.googleapis.com/kubernet-release/release/$(curl -s https://storage.googleapis.com/kubernet-release/stable.txt) /bin/linux/amd64/kubectl
-  # - chmod +x ./kubectl
-  # - sudo mv ./kubectl /usr/localbin/kubenctl
   - cp .env.travis .env
   - composer install --no-interaction
   - php artisan key:genarate
